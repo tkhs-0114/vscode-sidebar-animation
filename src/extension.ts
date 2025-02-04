@@ -17,14 +17,19 @@ export function activate(context: vscode.ExtensionContext) {
 	document.head.appendChild(style);
 }
 			`);
-		const reload = await vscode.window.showInformationMessage('Reload to apply the animation.', 'Reload', "not");
-		if (reload === 'Reload') {
-			vscode.commands.executeCommand('workbench.action.reloadWindow');
-		}
+		vscode.window.showInformationMessage('Reload to apply the animation.', 'Reload', "not").then((reload) => {
+			if (reload === 'Reload') {
+				vscode.commands.executeCommand('workbench.action.reloadWindow');
+			}
+		});
 	}));
-	context.subscriptions.push(vscode.commands.registerCommand('sidebar-animation.remove', () => {
-		remove();
-		vscode.commands.executeCommand('workbench.action.reloadWindow');
+	context.subscriptions.push(vscode.commands.registerCommand('sidebar-animation.remove', async () => {
+		await remove();
+		vscode.window.showInformationMessage('Reload to remove the animation.', 'Reload', "not").then((reload) => {
+			if (reload === 'Reload') {
+				vscode.commands.executeCommand('workbench.action.reloadWindow');
+			}
+		});
 	}));
 }
 
