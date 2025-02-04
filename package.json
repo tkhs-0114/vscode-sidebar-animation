@@ -15,11 +15,11 @@
     "commands": [
       {
         "command": "sidebar-animation.apply",
-        "title": "Apply Sidebar Animation"
+        "title": "Sidebar Animation - Apply "
       },
       {
         "command": "sidebar-animation.remove",
-        "title": "Remove Sidebar Animation"
+        "title": "Sidebar Animation - Remove"
       }
     ]
   },
