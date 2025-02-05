@@ -1,14 +1,35 @@
 {
   "name": "sidebar-animation",
   "displayName": "sidebar-animation",
-  "description": "",
+  "description": "add animation to the sidebar.",
   "version": "0.0.1",
+  "publisher": "tkhs-0114",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "Sidebar",
+    "Animation",
+    "Theme"
+  ],
+  "galleryBanner": {
+    "color": "#007ACC",
+    "theme": "dark"
+  },
+  "icon": "resources/icon.png",
+  "bugs": {
+    "url": "https://github.com/tkhs-0114/vscode-sidebar-animation/issues",
+    "email": "sugurut078@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkhs-0114/vscode-sidebar-animation"
+  },
+  "homepage": "https://github.com/tkhs-0114/vscode-sidebar-animation",
+  "license": "MIT",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
