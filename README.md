@@ -2,7 +2,7 @@
 
 add animation to the sidebar.
 サイドバーにアニメーションを追加します
-
+![sample]()
 
 ## Warns
 > **Even if you uninstall the extension, the animation will not be removed.**
