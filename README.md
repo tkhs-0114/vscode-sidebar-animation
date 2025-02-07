@@ -2,11 +2,11 @@
 
 add animation to the sidebar.
 サイドバーにアニメーションを追加します
-![sample]()
+![sample](https://raw.githubusercontent.com/tkhs-0114/vscode-sidebar-animation/refs/heads/develop/resources/sample.gif)
 
 ## Warns
 > **Even if you uninstall the extension, the animation will not be removed.**
-> Please run sidebar animation remove before uninstalling the extension.
+> Please run `sidebar animation remove` before uninstalling the extension.
 
 > **拡張機能をアンインストールしてもアニメーションは削除されません**
 > `sidebar animation remove`を実行した後にアンインストールしてください。
